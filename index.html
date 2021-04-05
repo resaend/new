@@ -21,7 +21,7 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-dark bg-dark">
     <div class="container">
       <div class="container">
         <a class="navbar-brand" href="#">IMRES</a>
@@ -32,9 +32,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#">Portfolio</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@
             <p class="status"> College Student</p>
           </div>
           <div class="col-lg-3">
-            <button class="btn btn-primary download">Download CV</button>
+            <a href="./cv.pdf"><button class="btn btn-primary download">Download CV</button></a>
           </div>
         </div>
       </div>
@@ -136,7 +136,7 @@
 
       <div class="col-md-6 col-lg-4 mt-3">
         <div class="card border-0 transform-on-hover">
-          <a class="lightbox"></a><img src="img/porto1.jpg" class="card-img-top"></a>
+          <a class="lightbox"></a><img src="img/porto6.jpg" class="card-img-top"></a>
         </div>
       </div>
     </div>
@@ -145,19 +145,85 @@
 
 
   <!-- about me start -->
-  <!-- <div class="batas">
-    <img src="./img/batas.png" alt="">
-  </div> -->
-  <div class="aboutme">
+  <div class="batas">
+    <img src="img/batas.png" alt="">
+  </div>
+
+  <div class="aboutme" id="about">
     <div class="container">
       <h1>About me</h1>
-      <p>Hi, my name is Resa Endrawan . I love to solve the problem and implement idea with design. Interest to explore
-        different styles of design and follow the design trend. I also like slicing design for my website. I also had
-        experienced as a blogger who shares random things and likes to redesign blogger templates used HTML & CSS for
-        almost 2 years from 2012-2014.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./img/foto.png" alt="foto">
+        </div>
+        <div class="col-md-6">
+          <p>Hello, I'm Resa Endrawan. I am college student currently studying Informatics at Indonesia Computer
+            Untiversity. I enjoy resolving the problem and implementing the idea with design. Interest in
+            exploring various design styles and following the design trend. I love slicing design for my website as
+            well. I
+            also had experience as a blogger who shares random stuff and loves to redesign blogger templates used HTML &
+            CSS
+            for almost 2 years starting in 2017 until 2019.</p>
+          <center>
+            <a href="https://www.facebook.com/resa.endrawan56/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com/resaendr/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/resaendr/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/resa-endrawan-29247a197/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://steamcommunity.com/id/resaendr/"><i class="fa fa-steam"></i></a>
+          </center>
+        </div>
+      </div>
     </div>
   </div>
   <!-- about me end -->
+
+  <div class="batasbawah">
+    <img src="img/batasbawah.png" alt="">
+  </div>
+
+
+  <!-- contact me -->
+  <div class="contactme" id="contact">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <div class="form col-lg-6">
+        <div class="form-field">
+          <input type="text" id="name" class="input-text" name="name">
+          <label for="name" class="label">Name</label>
+        </div>
+        <div class="form-field">
+          <input type="email" id="email" class="input-text" name="email">
+          <label for="email" class="label">E-mail</label>
+        </div>
+        <div class="form-field">
+          <input type="text" id="message" class="input-text" name="message">
+          <label for="message" class="label">Message</label>
+        </div>
+        <div class="form-field">
+          <input class="btn btn-primary submit" value="submit" type="submit" name="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </div>
 
@@ -180,6 +246,12 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 180);
+    });
   </script>
 
 </body>
