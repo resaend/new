@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    /* background-color: gray; */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: #5243AC;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+}
+
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #fff;
+    width: 10%;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+/* navbar end */
+
+
+/* jumbotron */
+.jumbotron {
+    background-size: cover;
+    height: 300px;
+    background-color: #5243AC;
+}
+
+.jumbotron .display-4 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.jumbotron .welcome {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.jumbotron img {
+    width: 350px;
+    margin-top: 61px;
+
+}
+
+
+
+/* info panel */
+.info-panel {
+    margin-top: -120px;
+    border-radius: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-panel img {
+    margin-left: 75px;
+}
+
+.info-panel h1 {
+    font-size: 24px;
+    /* margin-top: 100px; */
+    justify-content: left baseline;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-panel p {
+    display: flex;
+    justify-content: center;
+    color: #5243AC
+}
+
+.info-panel .download {
+    background-color: white;
+    color: #5243AC;
+    border-color: #5243AC;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    display: inline;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.info-panel .download:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* about me */
+/* .batas {
+    margin-left: 100px;
+}
+
+.batas img {
+    background-size: cover;
+    weight: 200px;
+} */
+
+.aboutme {
+    margin-top: 40px;
+    background-color: #5243AC;
+    padding: 20px;
+    color: #fff;
+}
+
+.aboutme h1 {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.aboutme p {
+    text-align: center;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Portfolio */
+.card,
+.card img {
+    border-radius: 30px;
+}
+
+
+.more {
+    height: auto !important;
+    border-radius: 26px;
+    cursor: pointer;
+    background-color: #5243AC;
+    margin: 0 !important;
+    text-decoration: none !important;
+    margin-top: 30px;
+}
+
+
+.more img {
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .navbar {
+        background-color: transparent;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #fff;
+        width: 50%;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        border-radius: 0px;
+    }
+
+
+    .jumbotron {
+        margin-top: -75px;
+
+    }
+
+    .jumbotron .welcome {
+        font-size: 18px;
+    }
+
+    .jumbotron img {
+        width: 300px;
+        margin-left: 400px;
+        margin-top: 39px;
+    }
+
+    .info-panel h1 {
+        font-size: 24px;
+        margin-top: 100px;
+        justify-content: left baseline;
+        font-family: 'Poppins', sans-serif;
+        /* margin-bottom: 0px; */
+        justify-content: start;
+    }
+
+    .info-panel img {
+        margin-left: 0px;
+    }
+
+    .jumbotron img {}
+
+    .info-panel p {
+        justify-content: start;
+    }
+
+    .info-panel .download {
+        margin-top: 100px;
+        justify-content: center;
+        margin-left: 0px;
+    }
